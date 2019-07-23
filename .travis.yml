@@ -8,4 +8,5 @@ before_script:
   - pip install -r requirements.txt
 
 script:
-  - python -m unittest discover -s TESTS/Calculator/
+  - python -m unittest discover -s TESTS/Calculator/ -p test_calc.py
+  - python -m unittest discover -s TESTS/Buggy_Calculator/ -p test_calc.py
